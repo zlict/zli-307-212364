@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="forename">Forename</label>
+      <input type="text" name="forename" id="forename" required minlength="2" />
+      <label for="surname">Surname</label>
+      <input type="text" name="surname" id="surname" required />
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+      <input
+        type="password"
+        name="passwordconfirmation"
+        id="passwordconfirmation"
+      />
+      <fieldset>
+        <legend>Hobbys</legend>
+        <label for="chess">Chess</label>
+        <input type="checkbox" name="hobbys[]" value="chess" id="chess" />
+        <input type="checkbox" name="hobbys[]" value="fortnite" />
+        <input type="checkbox" name="hobbys[]" value="clash" />
+      </fieldset>
+      <input type="checkbox" name="terms" />
+      <input type="submit" value="Sign up" />
+    </form>
+  </body>
+</html>
